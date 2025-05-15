@@ -4,6 +4,10 @@ ktor:
             - com.example.ApplicationKt.module
     deployment:
         port: 8080
+        watch:
+          - classes
+          - resources
+    development: true
 jwt:
   domain: "http://0.0.0.0:8080/"
   audience: "client"

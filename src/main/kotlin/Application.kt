@@ -4,6 +4,7 @@ import com.example.di.configureKoin
 import com.example.domain.services.BlogService
 import com.example.domain.services.UserService
 import com.example.routes.blogRoutes
+import com.example.routes.staticContent
 import com.example.routes.userRoutes
 import com.example.security.configSecurity
 import initDB
@@ -24,4 +25,5 @@ fun Application.module() {
     configSecurity(userService)
     userRoutes(userService)
     blogRoutes(blogService)
+    staticContent()
 }

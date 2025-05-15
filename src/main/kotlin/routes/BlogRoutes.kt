@@ -13,6 +13,8 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.Application
 import io.ktor.server.auth.authenticate
 import io.ktor.server.auth.authentication
+import io.ktor.server.http.content.staticFiles
+import io.ktor.server.http.content.staticResources
 import io.ktor.server.request.receive
 import io.ktor.server.response.respond
 import io.ktor.server.routing.delete
@@ -21,6 +23,7 @@ import io.ktor.server.routing.post
 import io.ktor.server.routing.put
 import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
+import java.io.File
 
 fun Application.blogRoutes(blogService: BlogService) {
     routing {
@@ -102,7 +105,15 @@ fun Application.blogRoutes(blogService: BlogService) {
             }
 
 
+            staticFiles("/resources", File("files/private"))
 
         }
+
+
+
+        staticFiles("/public_resources", File("files"))
+
+        staticResources("/", "static")
+
     }
 }
