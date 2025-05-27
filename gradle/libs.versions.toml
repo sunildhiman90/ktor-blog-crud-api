@@ -2,7 +2,7 @@
 [versions]
 exposed-version = "0.60.0"
 h2-version = "2.3.232"
-koin-version = "4.1.0-RC1"
+koin-version = "4.1.0-Beta11"
 kotlin-version = "2.1.21"
 ktor-version = "3.1.2"
 logback-version = "1.4.14"
