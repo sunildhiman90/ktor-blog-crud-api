@@ -1,9 +1,9 @@
 import com.example.db.tables.db.tables.BlogsTable
 import db.tables.UsersTable
 import io.ktor.server.application.Application
-import org.jetbrains.exposed.sql.Database
-import org.jetbrains.exposed.sql.SchemaUtils
-import org.jetbrains.exposed.sql.transactions.transaction
+import org.jetbrains.exposed.v1.jdbc.Database
+import org.jetbrains.exposed.v1.jdbc.SchemaUtils
+import org.jetbrains.exposed.v1.jdbc.transactions.transaction
 
 fun Application.initDB() {
     val url = environment.config.property("database.url").getString()

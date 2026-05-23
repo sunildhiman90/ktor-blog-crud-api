@@ -1,11 +1,11 @@
 
 [versions]
-exposed-version = "0.60.0"
-h2-version = "2.3.232"
-koin-version = "4.1.1"
-kotlin-version = "2.2.20"
-ktor-version = "3.2.3"
-logback-version = "1.4.14"
+exposed-version = "1.2.0"
+h2-version = "2.4.240"
+koin-version = "4.2.1"
+kotlin-version = "2.3.21"
+ktor-version = "3.5.0"
+logback-version = "1.5.32"
 
 [libraries]
 koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koin-version" }

@@ -4,9 +4,9 @@ import com.example.db.entities.UserEntity
 import com.example.db.tables.db.tables.BlogsTable
 import com.example.domain.models.User
 import db.tables.UsersTable
-import org.jetbrains.exposed.dao.IntEntity
-import org.jetbrains.exposed.dao.IntEntityClass
-import org.jetbrains.exposed.dao.id.EntityID
+import org.jetbrains.exposed.v1.core.dao.id.EntityID
+import org.jetbrains.exposed.v1.dao.IntEntity
+import org.jetbrains.exposed.v1.dao.IntEntityClass
 
 
 class BlogEntity(id: EntityID<Int>) : IntEntity(id) {

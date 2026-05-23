@@ -1,6 +1,6 @@
 package db.tables
 
-import org.jetbrains.exposed.dao.id.IntIdTable
+import org.jetbrains.exposed.v1.core.dao.id.IntIdTable
 
 object UsersTable : IntIdTable() {
     val username = varchar("username", 100).uniqueIndex()

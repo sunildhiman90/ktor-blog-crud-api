@@ -10,7 +10,6 @@ import com.example.domain.models.RegisterRequest
 import com.example.domain.models.User
 import com.example.domain.models.domain.models.UpdateBlogRequest
 import com.example.domain.repos.BlogRepository
-import org.jetbrains.exposed.sql.Except
 
 class BlogRepositoryImpl : BlogRepository {
     override suspend fun getAllBlogs(): List<Blog>? {

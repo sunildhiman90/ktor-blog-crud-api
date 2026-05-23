@@ -7,6 +7,7 @@ import com.example.domain.models.RegisterRequest
 import com.example.domain.models.User
 import com.example.domain.repos.UserRepository
 import db.tables.UsersTable
+import org.jetbrains.exposed.v1.core.eq
 import org.mindrot.jbcrypt.BCrypt
 
 class UserRepositoryImpl : UserRepository {
